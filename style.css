@@ -1,0 +1,38 @@
+body {
+    background-color: #000000;
+    color: #00ff00;
+    box-sizing: border-box;
+    font-family: "Lucida Console", monospace;
+    }
+a:link, a:visited {
+    color: #00ff00;
+    text-decoration: none;
+    }
+a:active, a:hover {
+    color: #ffffff;
+    }
+.container {
+    max-width: 600px;
+    margin: auto;
+    }
+.content {
+    justify-content: center;
+    align-items: center;
+    display: flex;    
+}
+@media screen and (max-width: 600px) {
+    .content {
+        width: 100%;
+		font-size: 2vw;
+        }
+    }
+
+h1 {
+  color: rgb(255, 255, 255);
+}
+h2 {
+  color: rgb(255, 255, 255);
+}
+hr {
+  border: 1px solid rgb(255, 255, 255);
+}
