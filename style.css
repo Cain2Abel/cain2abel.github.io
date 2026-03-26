@@ -18,21 +18,90 @@ a:active, a:hover {
 .content {
     justify-content: center;
     align-items: center;
-    display: flex;    
-}
-@media screen and (max-width: 600px) {
-    .content {
-        width: 100%;
-		font-size: 2vw;
-        }
+    display: flex;
     }
 
 h1 {
-  color: rgb(255, 255, 255);
-}
+    color: rgb(255, 255, 255);
+    }
 h2 {
-  color: rgb(255, 255, 255);
-}
+    color: rgb(255, 255, 255);
+    }
 hr {
-  border: 1px solid rgb(255, 255, 255);
-}
+    border: 1px solid rgb(255, 255, 255);
+    }
+
+/* ── Mobile styles ── */
+@media screen and (max-width: 768px) {
+
+    /* Add breathing room on small screens */
+    body {
+        padding: 8px;
+        }
+
+    /* Make the container full width on mobile */
+    .container {
+        max-width: 100%;
+        padding: 0 8px;
+        }
+
+    /* Make pre blocks horizontally scrollable so ASCII art
+       doesn't break the layout — pinch-zoom still works */
+    pre {
+        overflow-x: auto;
+        white-space: pre;
+        font-size: 0.5rem;
+        line-height: 1.15;
+        }
+
+    /* Stack nav links vertically and make them finger-friendly */
+    .menu {
+        font-size: 110% !important;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        }
+
+    .menu a {
+        display: block;
+        padding: 6px 0;
+        font-size: 1rem;
+        }
+
+    /* About page body text — readable size */
+    .font2 {
+        font-size: 100% !important;
+        }
+
+    .font2 p {
+        margin: 0.5em 0 1em 0;
+        text-indent: 20px;
+        }
+
+    /* Blog tree — scale down so it fits */
+    .tree {
+        font-size: 90% !important;
+        overflow-x: auto;
+        display: block;
+        }
+
+    /* Neat sites links — stacked and tappable */
+    .font1 {
+        font-size: 100% !important;
+        }
+
+    .font1 a {
+        display: block;
+        margin: 10px 0;
+        font-size: 1rem;
+        }
+
+    /* Headings scale down slightly */
+    h1 {
+        font-size: 1.3rem;
+        }
+
+    h2 {
+        font-size: 1.1rem;
+        }
+    }
